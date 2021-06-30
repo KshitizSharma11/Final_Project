@@ -1,16 +1,20 @@
 body{
-   
+    
     background-image: url("https://images.squarespace-cdn.com/content/v1/5755bccb8259b515333df0e1/1466111941034-GIIKB6HB6ADZB2O0D7HW/Stocksy_comp_461838.jpg");
     
     background-repeat: no-repeat;
-    background-size: 1280px 640px;
+    background-size: cover;
+    width: 100%;
 
+  }
+  *{
+    margin: 0;
   }
   
   /* Position the navbar container inside the image */
   .container {
     position: fixed;
-    margin: 20px;
+    margin: 3vh;
     width: auto;
     opacity: 0.7;
   }
@@ -24,13 +28,13 @@ body{
   
   /* Navbar links */
   .topnav a {
-      font-size: 18px;
+      font-size: 2.4vh;
       font-family:sans-serif;
-      letter-spacing: 2px;
+      letter-spacing: 0.4vh;
     float: left;
     color:white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 2vh 2.2vh;
     text-decoration: none;
     
   }
@@ -41,14 +45,68 @@ body{
   }
   h1{
       
-      margin-top: 0px;
+      
       border: 3px;
-      padding-top: 162px;
-      padding-right: 30px;
+      padding-top: 22vh;
+      padding-right: 0;
       text-align: center;
       color: rgb(240, 231, 231);
       font-family: Cambria;
-      font-size: 48px;
+      font-size: 7vh;
       font-weight: 500;
       
   }
+  h3{
+      
+    
+    
+    padding-top: 1.2vh;
+    padding-right: 0;
+    text-align: center;
+    color: rgb(240, 231, 231);
+    font-family: Cambria;
+    font-size: 3.5vh;
+    font-weight: 500;
+    
+}
+p{
+  
+    padding-bottom: 56vh;
+    padding-right: 0;
+    text-align: center;
+    color: rgb(240, 231, 231);
+    font-family: 'Gill Sans';
+    font-size: 3.5vh;
+    font-weight: 500;
+}
+  
+  #footer {
+    position:absolute;
+    padding-top: 0.7vh;
+    height: auto;
+    width: 100%;
+    opacity: 0.6;
+    background: grey;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+.menu_simple{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.menu_simple li a{
+  padding: 2vh;
+  align-items: center;
+}
+.menu_simple .fa {
+  font-size: 7.6vh;
+  color: #fefefe;
+}
+
+.menu_simple .fa:hover {
+  color: #4a4a4a;
+  transition: color 0.3s ease-in;
+}
