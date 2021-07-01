@@ -1,22 +1,23 @@
 body{
-    
+    margin:0;
+
     background-image: url("https://images.squarespace-cdn.com/content/v1/5755bccb8259b515333df0e1/1466111941034-GIIKB6HB6ADZB2O0D7HW/Stocksy_comp_461838.jpg");
     
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-
+    background-size: cover; 
+    background-position: center center;
+    background-attachment: fixed;
+    
+    
   }
-  *{
-    margin: 0;
-  }
+  
   
   /* Position the navbar container inside the image */
   .container {
     position: fixed;
-    margin: 3vh;
+    margin-left: 2.5vh;
     width: auto;
-    opacity: 0.7;
+    opacity: 0.8;
   }
   
   /* The navbar */
@@ -69,7 +70,7 @@ body{
     font-weight: 500;
     
 }
-p{
+.cont{
   
     padding-bottom: 56vh;
     padding-right: 0;
@@ -80,33 +81,116 @@ p{
     font-weight: 500;
 }
   
-  #footer {
-    position:absolute;
-    padding-top: 0.7vh;
-    height: auto;
-    width: 100%;
-    opacity: 0.6;
-    background: grey;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    
+*{
+  
+  box-sizing: border-box;
+  
+  text-decoration: none;
 }
-.menu_simple{
-  list-style: none;
+footer{
+  width: 100%;
+  position: relative;
+  opacity: 0.8;
+  background: #111;
+}
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.menu_simple li a{
-  padding: 2vh;
-  align-items: center;
+footer .content p,a{
+  color: #fff;
 }
-.menu_simple .fa {
-  font-size: 7.6vh;
-  color: #fefefe;
+footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+
+}
+.topic{
+  padding-left: 0.5vh;
+}
+footer .content p{
+  padding-left:0.5vh;
+  text-align: justify;
+}
+footer .content .lower .topic{
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i{
+  padding-right: 16px;
+}
+footer .content .middle{
+  padding-left: 80px;
+}
+footer .content .middle a{
+  line-height: 32px;
 }
 
-.menu_simple .fa:hover {
-  color: #4a4a4a;
-  transition: color 0.3s ease-in;
+.content .right input[type="submit"]:hover{
+  background: none;
+  color:  #eb2f06;
+}
+footer .content .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 0px 0px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover{
+  border-color: #eb2f06;
+}
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+footer .bottom a{
+  color: #eb2f06;
+}
+footer a{
+  transition: all 0.3s ease;
+}
+footer a:hover{
+  color: #eb2f06;
+}
+@media (max-width:1100px) {
+  footer .content .middle{
+    padding-left: 50px;
+  }
+}
+@media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  }
+  .content .right{
+    margin-top: 40px;
+  }
+}
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .content .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle{
+    padding-left: 0;
+  }
 }
