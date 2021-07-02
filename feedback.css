@@ -1,27 +1,32 @@
 body{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSivFGFDTbPSs2-xqwBKmYvgGxLkY52lIOfxA&usqp=CAU");
+    
     background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://images.squarespace-cdn.com/content/v1/5755bccb8259b515333df0e1/1466119893918-X0SATSKR7JA3GP361K3R/Stocksy_comp_821143-crop.jpg");
     background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     font-family: sans-serif;
+    color: aliceblue;
+    opacity: 1;
   }
 
 h1{
-  font-size: 50px;
+  font-size: 7.1vh;
   text-align: center;
 }
 
 .container{
-  font-size: 20px;
-  max-width: 1000px;
-  border: 2px solid;
-  padding: 25px;
-  margin: 32px auto;
+  font-size: 3vh;
+  max-width: 142vh;
+  border: 0.25vh solid;
+  padding: 3.5vh;
+  margin: 4.5vh auto;
 }
 
 input, textarea{
-  font-size: 15px;
-  padding: 8px;
-  border: 1px solid black;
+  font-size: 2.2vh;
+  padding: 1.2vh;
+  border: 0.175vh solid white;
   background: none;
   width: 100%;
   display: block;
@@ -29,7 +34,7 @@ input, textarea{
 
 label{
   display: block;
-  padding: 8px 0 ;
+  padding: 1.2vh 0 ;
 }
 
 table label{
@@ -37,20 +42,20 @@ table label{
 }
 
 ::placeholder{
-  color: black;
+  color: white;
 }
 
 .date{
-  padding: 8px 0;
+  padding: 1.2vh 0;
   background: none;
   display: flex;
 }
 
 
 select{
-  font-size: 15px;
-  padding: 8px;
-  border: 1px solid black;
+  font-size: 2.1vh;
+  padding: 1.2vh;
+  border: 0.175px solid whitesmoke;
   background: none;
   width: 100%;
 }
@@ -61,18 +66,18 @@ table input{
 }
 
 #sbmt{
-  background-color:black;
-  color: white;
+  background-color:whitesmoke;
+  color: black;
   width: auto;
   cursor: pointer;
   border: 0;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 1.5vh;
+  border-radius: 3vh;
 }
 
 #sbmt:hover{
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 
