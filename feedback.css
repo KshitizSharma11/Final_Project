@@ -1,0 +1,81 @@
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSivFGFDTbPSs2-xqwBKmYvgGxLkY52lIOfxA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+  }
+
+h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+.container{
+  font-size: 20px;
+  max-width: 1000px;
+  border: 2px solid;
+  padding: 25px;
+  margin: 32px auto;
+}
+
+input, textarea{
+  font-size: 15px;
+  padding: 8px;
+  border: 1px solid black;
+  background: none;
+  width: 100%;
+  display: block;
+}
+
+label{
+  display: block;
+  padding: 8px 0 ;
+}
+
+table label{
+  display: inline;
+}
+
+::placeholder{
+  color: black;
+}
+
+.date{
+  padding: 8px 0;
+  background: none;
+  display: flex;
+}
+
+
+select{
+  font-size: 15px;
+  padding: 8px;
+  border: 1px solid black;
+  background: none;
+  width: 100%;
+}
+
+table input{
+  width: auto;
+  display: inline;
+}
+
+#sbmt{
+  background-color:black;
+  color: white;
+  width: auto;
+  cursor: pointer;
+  border: 0;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#sbmt:hover{
+  background-color: white;
+  color: black;
+}
+
+
+
+
+
