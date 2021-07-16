@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <h1>FEED US BACK</h1>
+        </header>
+        <form class="container" action="connect2.php" method="POST">
+            <p>Help us know you better, so that we can serve you better.<br>
+                Information provided herein will be used solely for research purposes and will not be sold to any third parties.</p>
+            <hr>
+        <section>
+            <h2>LET US KNOW YOU BETTER</h2> 
+            
+                <label for="cname"></label>
+                <input type="text" id="cname" name="cname" size="30" placeholder="Customer Name*" style="color: aliceblue;" required>
+                <div class="date">
+                    <label for="dob">Date of Birth:&ensp;</label>
+                    <input type="date" id="dob" name="dob" placeholder="Date of Birth" style="color: aliceblue;">
+                </div>                  
+                <label for="gender" style="color: aliceblue;" ></label>
+                    <select id="gender" name="gender" style="color: aliceblue;" >
+                        <option style="color: black;">Select Gender</option>
+                        <option style="color: black;" value="M">Male</option>
+                        <option style="color: black;" value="F">Female</option>
+                    </select><br>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="E-mail*" style="color: aliceblue;" required>
+        </section>
+        <br>
+        <hr>
+
+        <section>
+            <h2>CONTACT DETAILS</h2>
+                <label for="phone"></label>
+                <input type="tel" id="phone" name="phone" placeholder="Mobile No.*" style="color: aliceblue;" required>
+                    
+                <textarea rows="6" cols="25" name="address" placeholder="Address" style="color: aliceblue;"></textarea>
+        </section><br>
+        <hr>
+
+        
+                <label for="visit"></label>
+                    <select id="visit" name="visit" style="color:aliceblue">
+                        <option style="color: black;">How often do you visit Cheer Cafe</option>
+                        <option value="Daily" style="color: black;">Daily</option>
+                        <option  value="Weekly" style="color: black;">Weekly</option>
+                        <option value="BiWeekly" style="color: black;">BiWeekly</option>
+                        <option value="Monthly" style="color: black;">Monthly</option>
+                        <option  value="Quaterly"style="color: black;">Quaterly</option>
+                    </select><br>    
+                <div class="date" style="color:aliceblue;">
+                    <label for="dov">Date of visit:&ensp; </label>
+                    <input type="date" id="dov" name="dov" style="color: aliceblue;" placeholder="Last date of visit*"><br>
+                </div>
+                
+                <label for="tov"></label>
+                    <select id="tov" name="tov" style="color:aliceblue;">
+                        <option style="color: black;">Time of visit</option>
+                        <option value="9:00am" style="color: black;">09:00am</option>
+                        <option value="9:30am" style="color: black;">09:30am</option>
+                        <option value="10:00am" style="color: black;">10:00am</option>
+                        <option value="10:30am" style="color: black;">10:30am</option>
+                        <option value="11:00am" style="color: black;">11:00am</option>
+                        <option value="11:30am" style="color: black;">11:30am</option>
+                        <option value="12:00pm" style="color: black;">12:00pm</option>
+                        <option value="12:30pm" style="color: black;">12:30pm</option>
+                        <option value="1:00pm" style="color: black;">01:00pm</option>
+                        <option value="1:30pm" style="color: black;">01:30pm</option>
+                        <option value="2:00pm" style="color: black;">02:00pm</option>
+                        <option value="2:30pm" style="color: black;">02:30pm</option>
+                        <option value="3:00pm" style="color: black;">03:00pm</option>
+                        <option value="3:30pm" style="color: black;">03:30pm</option>
+                        <option value="4:00pm" style="color: black;">04:00pm</option>
+                        <option value="4:30pm" style="color: black;">04:30pm</option>
+                        <option value="5:00pm" style="color: black;">05:00pm</option>
+                        <option value="5:30pm" style="color: black;">05:30pm</option>
+                        <option value="6:00pm" style="color: black;">06:00pm</option>
+                        <option value="6:30pm" style="color: black;">06:30pm</option>
+                        <option value="7:00pm" style="color: black;">07:00pm</option>
+                        <option value="7:30pm" style="color: black;">07:30pm</option>
+                        <option value="8:00pm" style="color: black;">08:00pm</option>
+                        <option value="8:30pm" style="color: black;">08:30pm</option>
+                        <option value="9:00pm" style="color: black;">09:00pm</option>
+                        <option value="9:30pm" style="color: black;">09:30pm</option>
+                        <option value="10:00pm"  style="color: black;">10:00pm</option>
+                        <option value="10:30pm" style="color: black;">10:30pm</option>
+                        <option value="11:00pm" style="color: black;">11:00pm</option>
+                        <option value="11:30pm" style="color: black;">11:30pm</option>
+                    </select> <br>     
+        </section><br>
+        <hr>
+
+        <label>Your overall experience with us ?</label><br>
+  
+<span class="star-rating">
+  <input type="radio" name="rating1" value="1"><i></i>
+  <input type="radio" name="rating1" value="2"><i></i>
+  <input type="radio" name="rating1" value="3"><i></i>
+  <input type="radio" name="rating1" value="4"><i></i>
+  <input type="radio" name="rating1" value="5"><i></i>
+</span>
+            <section>
+                <h2>We value your feedback</h2>
+                <textarea rows="10" cols="150" name="feedback" required placeholder="Your Feedback (in 500 characters)" style="color: aliceblue;"></textarea><br>
+                <textarea rows="10" cols="150" style="color: aliceblue;" name="Q2" required placeholder="What would make you return more frequently to this restaurant?(in 500 characters)"></textarea><br>
+                <textarea rows="10" cols="150" style="color: aliceblue;" name="Q3" required placeholder="How can we serve you better?(in 500 characters)"></textarea><br>
+            </section>
+            
+            <input type="submit" id="sbmt" value="Submit">
+    </form>
+    
+</body>
+</html>
